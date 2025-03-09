@@ -1,0 +1,68 @@
+header {
+  padding: 3rem;
+}
+
+body {
+  background-image: url(https://plus.unsplash.com/premium_photo-1667598736309-1ea3b0fb1afa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  /* Optional: to cover the entire element */
+  background-position: center;
+  /* Optional: to center the image */
+  /* min-height: 100; */
+  min-height: 100dvh;
+}
+
+.scoreBoard {
+  background-color: #152bf476;
+  color: white;
+  border: 3px solid #dadae276;
+  text-shadow: 0px 3px 15px rgb(0, 62, 197);
+  padding: 3rem 0;
+}
+
+.scoreButton {
+  background-color: #152bf476;
+  color: white;
+  /* padding: 3rem 0; */
+}
+
+.scoreButton:hover {
+  color: white;
+  background-color: #152bf4;
+}
+
+/* .scoreNumber {
+  padding: 3rem 3rem;
+}
+
+.scoreNumber p {
+  background-color: #3f49a576;
+  color: white;
+  border: 3px solid #34a1a576;
+  padding: 3rem 3rem;
+} */
+
+
+.scoreNumber {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  /* Space between the score elements */
+}
+
+.scoreNumber p {
+  border: 3px solid #34a1a576;
+  padding: 5px 15%;
+  /* Smaller padding */
+  margin: 5px 0;
+  /* Margin to add space around the boxes */
+  width: fit-content;
+  /* Adjust width to fit content */
+  background-color: #3f49a576;
+  /* Optional: Background color for better visibility */
+  border-radius: 5px;
+  /* Optional: Rounded corners */
+  text-align: center;
+  /* Center the text inside the box */
+}
