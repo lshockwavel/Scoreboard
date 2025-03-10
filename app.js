@@ -20,13 +20,19 @@ function increaseScore(increaseValue, Team) {
   if (Team == Teams.HOME) {
     /* UpdateScore for Home */
     homeScore += increaseValue;
+
+    // keep it at 0 if the score is less than 0
     if (homeScore < 0) { homeScore = 0 }
+
     updateScore(Team);
   }
   else {
     /* Update score for Away */
     awayScore += increaseValue;
+
+    // keep it at 0 if the score is less than 0
     if (awayScore < 0) { awayScore = 0 }
+
     updateScore(Team);
   }
 }
@@ -59,6 +65,3 @@ function updateScore(team = Teams.DEFAULT) {
     resetScore();
   }
 }
-
-
-
